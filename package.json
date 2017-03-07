@@ -1,0 +1,21 @@
+{
+  "name": "code-style",
+  "version": "1.0.0",
+  "description": "Sescret Escapes Code Styles",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secretescapes/code-style.git"
+  },
+  "contributors": [
+    {
+      "name": "Mouse Braun",
+      "email": "mouse@secretescapes.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/secretescapes/code-style/issues"
+  },
+  "homepage": "https://github.com/secretescapes/code-style#readme"
+}

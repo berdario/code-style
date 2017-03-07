@@ -30,3 +30,7 @@ Issues
 ## change log
 --------
 
++ 1.0.0
+    + javascript rules 1.0.0 added
+    + initial css rules added
+
