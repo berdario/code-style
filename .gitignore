@@ -1,7 +1,2 @@
-node_modules/
 *.log
 .DS_Store
-
-backstop_data/
-coverage/
-dist/

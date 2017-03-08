@@ -1,4 +1,4 @@
-Sescret Escapes Code Styles
+Secret Escapes Code Styles
 =======
 
 Base code styles to be added to front end projects as a dependency
@@ -31,6 +31,6 @@ Issues
 --------
 
 + 1.0.0
-    + javascript rules 1.0.0 added
+    + javascript rules added
     + initial css rules added
 
