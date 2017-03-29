@@ -1,6 +1,6 @@
 {
   "name": "code-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sescret Escapes Code Styles",
   "main": "index.js",
   "repository": {
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/secretescapes/code-style/issues"
   },
-  "homepage": "https://github.com/secretescapes/code-style#readme"
+  "homepage": "https://github.com/secretescapes/code-style#readme",
+  "dependencies": {
+    "eslint": "^3.4.0",
+    "stylelint": "^7.5.0",
+    "stylelint-no-browser-hacks": "^1.0.2",
+    "stylelint-order": "^0.4.2"
+  }
 }
