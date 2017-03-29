@@ -1,4 +1,8 @@
 {
+  "plugins": [
+    "./node_modules/stylelint-no-browser-hacks/lib",
+    "stylelint-order"
+  ],
   "rules": {
     "at-rule-blacklist": [],
     "at-rule-empty-line-before": "always",
@@ -9,7 +13,6 @@
     "block-closing-brace-newline-after": "always",
     "block-closing-brace-newline-before": "always",
     "block-no-empty": true,
-    "block-no-single-line": true,
     "block-opening-brace-newline-after": "always",
     "block-opening-brace-newline-before": "always",
     "color-hex-case": "lower",
@@ -22,10 +25,8 @@
     "declaration-block-no-duplicate-properties": [true, {
          "ignoreProperties": ["/composes/"]
     }],
-    "declaration-block-no-ignored-properties": true,
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
-    "declaration-block-properties-order": ["composes"],
     "declaration-block-semicolon-newline-after": "always",
     "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": 1,
@@ -53,7 +54,6 @@
     "media-feature-name-case": "lower",
     "media-feature-name-no-unknown": true,
     "media-feature-name-no-vendor-prefix": true,
-    "media-feature-no-missing-punctuation": true,
     "media-feature-parentheses-space-inside": "always",
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "always",
@@ -61,7 +61,6 @@
     "media-query-list-comma-newline-before": "always",
     "media-query-list-comma-space-after": "always",
     "media-query-list-comma-space-before": "always",
-    "no-browser-hacks": true,
     "no-descending-specificity": true,
     "no-empty-source": true,
     "no-eol-whitespace": true,
@@ -71,13 +70,22 @@
     "no-unknown-animations": true,
     "number-leading-zero": "always",
     "number-no-trailing-zeros": true,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-alphabetical-order": true,
+    "plugin/no-browser-hacks": [ true,
+      {
+        browsers: [
+          "last 2 versions",
+          "ie >=7"
+        ]
+      }
+    ],
     "property-blacklist": [],
     "property-case": "lower",
-    "root-no-standard-properties": true,
-    "rule-nested-empty-line-before": ["always", {
-        "ignore": ["after-comment"]
-        }],
-    "rule-non-nested-empty-line-before": ["always", {
+    "rule-empty-line-before": ["always", {
         "ignore": ["after-comment"]
         }],
     "selector-attribute-brackets-space-inside": "always",
@@ -100,12 +108,11 @@
     "selector-pseudo-element-case": "lower",
     "selector-pseudo-element-colon-notation": "single",
     "selector-pseudo-element-no-unknown": true,
-    "selector-root-no-composition": true,
     "selector-type-no-unknown": true,
     "shorthand-property-no-redundant-values": true,
     "string-no-newline": true,
     "string-quotes": "double",
-    "time-no-imperceptible": true,
+    "time-min-milliseconds": 100,
     "unit-blacklist": [],
     "unit-case": "lower",
     "unit-no-unknown": true,
